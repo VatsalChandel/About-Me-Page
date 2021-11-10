@@ -8,7 +8,7 @@
 html{
     scroll-behavior: smooth;
 }
-/* custom scroll bar */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -21,7 +21,7 @@ html{
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-/* all similar content styling codes */
+
 section{
     padding: 100px 0;
 }
@@ -121,7 +121,7 @@ section .title::after{
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }
-/* menu btn styling */
+
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -155,7 +155,7 @@ section .title::after{
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
-/* home section styling */
+
 .home{
     display: flex;
     background: url("images/banner.jpg") no-repeat center;
@@ -403,7 +403,7 @@ section .title::after{
     background: cyan;
 }
 .skills-content .right .html::before{
-    width: 90%;
+    width: 80%;
 }
 .skills-content .right .css::before{
     width: 70%;
