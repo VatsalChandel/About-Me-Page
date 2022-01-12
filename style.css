@@ -402,19 +402,31 @@ section .title::after{
     top: 0;
     background: cyan;
 }
-.skills-content .right .html::before{
+.skills-content .right .java::before{
     width: 80%;
 }
-.skills-content .right .css::before{
+.skills-content .right .cpp::before{
+    width: 60%;
+}
+.skills-content .right .python::before{
     width: 70%;
 }
 .skills-content .right .js::before{
     width: 40%;
 }
-.skills-content .right .php::before{
-    width: 40%;
+.skills-content .right .html::before{
+    width: 50%;
 }
-.skills-content .right .mysql::before{
+.skills-content .right .css::before{
+    width: 50%;
+}
+.skills-content .right .excel::before{
+    width: 65%;
+}
+.skills-content .right .tableau::before{
+    width: 60%;
+}
+.skills-content .right .bigml::before{
     width: 60%;
 }
 
