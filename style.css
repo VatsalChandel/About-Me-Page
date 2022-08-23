@@ -208,6 +208,8 @@ section .title::after{
 
 
 
+
+
 .about .title::after{
     content: "Who I Am";
 }
@@ -340,9 +342,6 @@ section .title::after{
     color: cyan;
     background: none;
 }
-
-
-
 
 
 .skills .title::after{
