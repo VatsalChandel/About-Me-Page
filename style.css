@@ -30,7 +30,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .about1, .about2, .skills, .contact{
+.about, .about1, .about2, .skills, .contact, .experience, .resume{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -38,7 +38,8 @@ section{
 .about2 .about2-content,
 .services .serv-content,
 .skills .skills-content,
-.contact .contact-content{
+.contact .contact-content,
+.experience .experience-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -158,7 +159,7 @@ section .title::after{
 
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("images/new_banner.jpeg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -254,9 +255,59 @@ section .title::after{
 }
 
 
+.experience .title::after{
+    content: "Industry Experience";
+}
+.experience .experience-content .left{
+    width: 45%;
+}
+.experience .experience -content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.experience .experience-content .right{
+    width: 55%;
+}
+.experience .experience-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.experience .experience-content .right .text span{
+    color: cyan;
+}
+.experience .experience-content .right p{
+    text-align: justify;
+}
+.experience .experience-content-sub-title a{
+
+    font-size: 22px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+.experience .experience-content-sub-title p{
+
+    font-size: 18px;
+
+    padding: 10px 30px;
+
+}
+
+
+.experience .experience-content .right a:hover{
+    color: cyan;
+    background: none;
+}
+
+
+
 
 .about1 .title::after{
-    content: "What I've Done";
+    content: "Some Projects";
 }
 .about1 .about1-content .left{
     width: 45%;
@@ -402,19 +453,19 @@ section .title::after{
     background: cyan;
 }
 .skills-content .right .java::before{
-    width: 80%;
+    width: 75%;
 }
 .skills-content .right .cpp::before{
-    width: 60%;
+    width: 50%;
 }
 .skills-content .right .python::before{
-    width: 70%;
+    width: 90%;
 }
 .skills-content .right .js::before{
     width: 40%;
 }
 .skills-content .right .html::before{
-    width: 50%;
+    width: 65%;
 }
 .skills-content .right .css::before{
     width: 50%;
@@ -428,6 +479,55 @@ section .title::after{
 .skills-content .right .bigml::before{
     width: 50%;
 }
+
+.skills-content .right .r::before{
+    width: 70%;
+}
+.skills-content .right .figma::before{
+    width: 65%;
+}
+
+.skills-content .right .ionic::before{
+    width: 70%;
+}
+
+.resume .resume-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: safe center;
+}
+
+
+.resume .title::after{
+    content: "My Resume";
+}
+
+.resume .resume-content  a{
+
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+
+}
+
+.resume .resume-content .down a{
+    background: cyan;
+    color: #fff;
+    font-size: 20px;
+
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid cyan;
+    transition: all 0.3s ease;
+}
+.resume .resume-content  a:hover{
+    color: cyan;
+    background: none;
+}
+
+
 
 
 .contact .title::after{
