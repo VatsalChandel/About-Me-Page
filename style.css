@@ -520,9 +520,9 @@ section .title::after{
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid cyan;
-    transition: all 0.3s ease;
+    transition: all 0.35s ease;
 }
-.resume .resume-content  a:hover{
+.resume .resume-content .down  a:hover{
     color: cyan;
     background: none;
 }
