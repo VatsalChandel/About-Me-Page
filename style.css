@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+body{
+    background-color: #808080;
+    color: #ffffff;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
+} 
 html{
     scroll-behavior: smooth;
 }
@@ -30,7 +34,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .about1, .about2, .skills, .contact, .experience, .resume{
+.about, .about1, .about2, .skills, .contact, .experience, .resume, .secret{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -71,7 +75,7 @@ section .title::after{
     font-size: 20px;
     color: cyan;
     padding: 0 5px;
-    background: #fff;
+    background: #808080;
     transform: translateX(-50%);
 }
 /* navbar styling */
@@ -349,6 +353,14 @@ section .title::after{
     background: none;
 }
 
+.about1 .under-project{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
 
 
 .about2 .title::after{
@@ -558,7 +570,7 @@ section .title::after{
 }
 .contact .contact-content .row{
     display: flex;
-    height: 65px;
+    height: 52px;
     align-items: center;
 }
 .contact .contact-content .row .info{
@@ -569,10 +581,10 @@ section .title::after{
     color: cyan;
 }
 .contact .contact-content .info .head{
-    font-weight: 500;
+    font-weight: 950;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: white;
 }
 .contact .right form .fields{
     display: flex;
@@ -722,3 +734,45 @@ section .title::after{
         line-height: 38px;
     }
 }
+
+.secret{
+    display: grid;
+    place-items: center;
+    align-content: center;
+
+}
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+
+a:link {
+    color: cyan;
+  }
+  
+
+  a:visited {
+    color: cyan;
+  }
+  
+
+  a:hover {
+    color: hotpink;
+  }
+  
+
+  a:active {
+    color: blue;
+  }
