@@ -485,7 +485,17 @@ section .title::after{
 
 @media screen and (max-width: 650px){
     .skills .container{
-        grid-template-columns: repeat(1fr);
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+
+    }
+}
+
+@media screen and (max-width: 400px){
+    .skills .container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+
     }
 }
 
