@@ -313,19 +313,11 @@ section .title::after{
 .about1 .title::after{
     content: "Some Projects";
 }
-.about1 .about1-content .left{
-    width: 45%;
-}
-.about1 .about1 -content .left img{
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 6px;
-}
+
 .about1 .about1-content .right{
     width: 55%;
 }
-.about1 .about1-content .right .text{
+.about1 .about1-content .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -333,21 +325,18 @@ section .title::after{
 .about1 .about1-content .right .text span{
     color: cyan;
 }
-.about1 .about1-content .right p{
+.about1 .about1-content p{
     text-align: justify;
 }
-.about1 .about1-content .right a{
-    display: inline-block;
-    background: cyan;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid cyan;
-    transition: all 0.3s ease;
+
+.about1 .about1-content a{
+    font-size: 18px;
 }
+
+.about1 .about1-content .my-padding{
+    padding: 5;
+}
+
 .about1 .about1-content .right a:hover{
     color: cyan;
     background: none;
@@ -410,98 +399,89 @@ section .title::after{
 .skills .title::after{
     content: "What I Know";
 }
-.skills .skills-content .column{
-    width: calc(50% - 30px);
-}
-.skills .skills-content .left .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.skills .skills-content .left p{
-    text-align: justify;
-}
-.skills .skills-content .left a{
-    display: inline-block;
-    background: cyan;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid cyan;
-    transition: all 0.3s ease;
-}
-.skills .skills-content .left a:hover{
-    color: cyan;
-    background: none;
-}
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-.skills .skills-content .right .info{
-    display: flex;
-    margin-bottom: 5px;
+
+
+.skills .container{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
 }
-.skills .skills-content .right span{
-    font-weight: 500;
-    font-size: 18px;
+
+.skills .skill-box{
+    padding: 1rem;
+    color: #ddd;
 }
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
+.skills .skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
+    width: 35px;
+}
+
+.skills .skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
     position: relative;
 }
-.skills .skills-content .right .line::before{
-    content: "";
+
+.skills .skill-title:after{
+    content: '';
     position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: cyan;
-}
-.skills-content .right .java::before{
-    width: 75%;
-}
-.skills-content .right .cpp::before{
-    width: 50%;
-}
-.skills-content .right .python::before{
-    width: 90%;
-}
-.skills-content .right .js::before{
-    width: 40%;
-}
-.skills-content .right .html::before{
-    width: 65%;
-}
-.skills-content .right .css::before{
-    width: 50%;
-}
-.skills-content .right .excel::before{
-    width: 65%;
-}
-.skills-content .right .tableau::before{
-    width: 60%;
-}
-.skills-content .right .bigml::before{
-    width: 50%;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 2px 0 0 2xp;
+    background-color: cyan;
+    transition: .5s;
 }
 
-.skills-content .right .r::before{
-    width: 70%;
-}
-.skills-content .right .figma::before{
-    width: 65%;
+.skills .skill-title:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: cyan;
+    transition: .5s;
+
 }
 
-.skills-content .right .ionic::before{
-    width: 70%;
+.skills .skill-title h3{
+    color: #fff;
+    margin-top: 0.5rem;
 }
+.skills .img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.skills .skill-icon{
+    width: 60px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 990px){
+    .skills .container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+}
+
 
 .resume .resume-content{
     display: flex;
@@ -760,19 +740,115 @@ section .title::after{
 
 a:link {
     color: cyan;
-  }
+}
   
 
-  a:visited {
+a:visited {
     color: cyan;
-  }
+}
   
 
-  a:hover {
+a:hover {
     color: hotpink;
-  }
+}
   
 
-  a:active {
+a:active {
     color: blue;
-  }
+}
+
+.about .about-content p{
+    transition-delay: 600ms;
+}
+
+/*SKILL BOX*/
+.skills .skill-box:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.skills .skill-box:nth-child(3){
+    transition-delay: 400ms;    
+}
+
+.skills .skill-box:nth-child(4){
+    transition-delay: 600ms; 
+}
+
+.skills .skill-box:nth-child(5){
+    transition-delay: 800ms;   
+}
+
+.skills .skill-box:nth-child(6){
+    transition-delay: 1000ms;   
+}
+/*SKILL BOX*/
+
+
+.experience .experience-content-sub-title:nth-child(2){
+    transition-delay: 200ms;
+}
+
+
+/*MY PADDING*/
+.about .my-padding:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.about .my-padding:nth-child(3){
+    transition-delay: 400ms;
+}
+
+.about .my-padding:nth-child(4){
+    transition-delay: 600ms;
+}
+
+.about .my-padding:nth-child(5){
+    transition-delay: 800ms;
+}
+
+.about .my-padding:nth-child(6){
+    transition-delay: 1000ms;
+}
+
+.about .my-padding:nth-child(7){
+    transition-delay: 1200ms;
+}
+
+.about .my-padding:nth-child(8){
+    transition-delay: 1400ms;
+}
+/*MY PADDING*/
+
+
+
+/*PROJECTS*/
+.about1:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.about1:nth-child(3){
+    transition-delay: 400ms;
+}
+
+.about1:nth-child(4){
+    transition-delay: 600ms;
+}
+
+.about1:nth-child(5){
+    transition-delay: 800ms;
+}
+
+.about1:nth-child(6){
+    transition-delay: 1000ms;
+}
+
+.about1:nth-child(7){
+    transition-delay: 1200ms;
+}
+
+.about1:nth-child(8){
+    transition-delay: 1400ms;
+}
+/*PROJECTS*/
+
+
