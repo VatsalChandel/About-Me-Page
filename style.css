@@ -352,6 +352,63 @@ section .title::after{
     font-weight: 300;
 }
 
+.about1 .about1-content .card{
+    padding-top: 30px;
+}
+
+.about1 .about1-content .card-section{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.about1 .about1-content .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #808080;
+    
+}
+
+.about1 .about1-content h4{
+    color: #ffffff;
+}
+
+.about1 .about1-content p{
+    color: #ffffff;
+}
+  
+  /* On mouse-over, add a deeper shadow */
+.about1 .about1-content .card:hover {
+    box-shadow: 0 8px 16px 0 cyan;
+}
+  
+  /* Add some padding inside the card container */
+.about1 .about1-content .container {
+    padding: 10px 16px;
+    
+}
+
+.about1 .about1-content .container:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.about1 .about1-content .container:nth-child(3){
+    transition-delay: 400ms;
+}
+
+.about1 .about1-content .container:nth-child(4){
+    transition-delay: 600ms;
+}
+
+.about1 .about1-content .container:nth-child(5){
+    transition-delay: 800ms;
+}
+
+.about1 .about1-content .container:nth-child(6){
+    transition-delay: 1000ms;
+}
+
+
 
 .about2 .title::after{
     content: "What I'm Listening Too";
