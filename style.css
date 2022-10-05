@@ -353,7 +353,9 @@ section .title::after{
 }
 
 .about1 .about1-content .card{
-    padding-top: 30px;
+    padding-top: 10px;
+    width: 500px;
+    height: 500px;
 }
 
 .about1 .about1-content .card-section{
@@ -364,7 +366,6 @@ section .title::after{
 .about1 .about1-content .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
     background-color: #808080;
     
 }
@@ -389,7 +390,7 @@ section .title::after{
 }
 
 .about1 .about1-content .container:nth-child(2){
-    transition-delay: 200ms;
+    transition-delay: 2200ms;
 }
 
 .about1 .about1-content .container:nth-child(3){
@@ -408,6 +409,13 @@ section .title::after{
     transition-delay: 1000ms;
 }
 
+.about1 .about1-content .container:nth-child(7){
+    transition-delay: 1200ms;
+}
+
+.about1 .about1-content .container:nth-child(8){
+    transition-delay: 1400ms;
+}
 
 
 .about2 .title::after{
