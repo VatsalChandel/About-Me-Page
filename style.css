@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 body{
-    background-color: #808080;
-    color: #ffffff;
+    background-color: #d9d9d9;
+    color: #565656;
 }
 *{
     margin: 0;
@@ -74,9 +74,9 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: cyan;
+    color: #4484ce;
     padding: 0 5px;
-    background: #808080;
+    background: #d9d9d9;
     transform: translateX(-50%);
 }
 /* navbar styling */
@@ -90,7 +90,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: cyan;
+    background: #4484ce;
 }
 .navbar .max-width{
     display: flex;
@@ -103,7 +103,7 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: cyan;
+    color: #4484ce;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -122,7 +122,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: cyan;
+    color: #4484ce;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -138,7 +138,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: cyan;
+    background: #4484ce;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -192,23 +192,23 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: cyan;
+    color: #4484ce;
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: cyan;
+    background: #4484ce;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid cyan;
+    border: 2px solid #4484ce;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: cyan;
+    color: #4484ce;
     background: none;
 }
 
@@ -237,25 +237,25 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: cyan;
+    color: #4484ce;
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: cyan;
+    background: #4484ce;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid cyan;
+    border: 2px solid #4484ce;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: cyan;
+    color: #4484ce;
     background: none;
 }
 
@@ -281,7 +281,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .experience .experience-content .right .text span{
-    color: cyan;
+    color: #4484ce;
 }
 .experience .experience-content .right p{
     text-align: justify;
@@ -304,7 +304,7 @@ section .title::after{
 
 
 .experience .experience-content .right a:hover{
-    color: cyan;
+    color: #4484ce;
     background: none;
 }
 
@@ -324,7 +324,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about1 .about1-content .right .text span{
-    color: cyan;
+    color: #4484ce;
 }
 .about1 .about1-content p{
     text-align: justify;
@@ -339,7 +339,7 @@ section .title::after{
 }
 
 .about1 .about1-content .right a:hover{
-    color: cyan;
+    color: #4484ce;
     background: none;
 }
 
@@ -353,21 +353,27 @@ section .title::after{
 }
 
 .about1 .about1-content .card{
-    padding-top: 10px;
     width: 500px;
     height: 500px;
 }
 
 .about1 .about1-content .card-section{
     padding-left: 10px;
-    padding-top: 5px;
 }
 
 .about1 .about1-content .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: #808080;
-    
+    background-color: #565656;
+    border-radius: 25px;
+}
+
+.about1 .about1-content .card img{
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .about1 .about1-content h4{
@@ -380,7 +386,7 @@ section .title::after{
   
   /* On mouse-over, add a deeper shadow */
 .about1 .about1-content .card:hover {
-    box-shadow: 0 8px 16px 0 cyan;
+    box-shadow: 0 0 50px 10px #4484ce;
 }
   
   /* Add some padding inside the card container */
@@ -439,25 +445,25 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about2 .about2-content .right .text span{
-    color: cyan;
+    color: #4484ce;
 }
 .about2 .about2-content .right p{
     text-align: justify;
 }
 .about2 .about2-content .right a{
     display: inline-block;
-    background: cyan;
-    color: #fff;
+    background: #4484ce;
+    color: #565656;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid cyan;
+    border: 2px solid #4484ce;
     transition: all 0.3s ease;
 }
 .about2 .about2-content .right a:hover{
-    color: cyan;
+    color: #4484ce;
     background: none;
 }
 
@@ -480,7 +486,7 @@ section .title::after{
 
 .skills .skill-box{
     padding: 1rem;
-    color: #ddd;
+    color: #565656;
 }
 .skills .skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
     width: 35px;
@@ -503,7 +509,7 @@ section .title::after{
     width: 0;
     height: 4px;
     border-radius: 2px 0 0 2xp;
-    background-color: cyan;
+    background-color: #4484ce;
     transition: .5s;
 }
 
@@ -515,13 +521,13 @@ section .title::after{
     width: 0;
     height: 4px;
     border-radius: 0 2px 2px 0;
-    background-color: cyan;
+    background-color: #4484ce;
     transition: .5s;
 
 }
 
 .skills .skill-title h3{
-    color: #fff;
+    color: #565656;
     margin-top: 0.5rem;
 }
 .skills .img{
@@ -529,7 +535,7 @@ section .title::after{
     height: 90px;
     position: relative;
     border-radius: 45px;
-    background: #fff;
+    background: #565656;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -579,17 +585,17 @@ section .title::after{
 }
 
 .resume .resume-content .down a{
-    background: cyan;
+    background: #4484ce;
     color: #fff;
     font-size: 20px;
 
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid cyan;
+    border: 2px solid #4484ce;
     transition: all 0.35s ease;
 }
 .resume .resume-content .down  a:hover{
-    color: cyan;
+    color: #4484ce;
     background: none;
 }
 
@@ -632,13 +638,13 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: cyan;
+    color: #4484ce;
 }
 .contact .contact-content .info .head{
     font-weight: 950;
 }
 .contact .contact-content .info .sub-title{
-    color: white;
+    color: #565656;
 }
 .contact .right form .fields{
     display: flex;
@@ -813,12 +819,12 @@ section .title::after{
 
 
 a:link {
-    color: cyan;
+    color: #4484ce;
 }
   
 
 a:visited {
-    color: cyan;
+    color: #4484ce;
 }
   
 
